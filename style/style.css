@@ -1,0 +1,60 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	background: #7742f4;
+}
+section {
+	width: 60%;
+	height: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.half {
+	position: relative;
+	width: 100%;
+	height: 50%;
+	margin: 0;
+	padding: 0;
+	display: flex;  
+    justify-content: center;
+}
+.question {
+	letter-spacing: 1px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 50px;
+	position: relative;
+	display: flex;
+	text-align: center;
+	color: white;
+	
+}
+.answers_container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;  
+    justify-content: space-around;
+}
+.answer {
+	width: 16%;
+	height: 25px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	color: white;
+	background: #181818;
+	border-radius: 3px;
+	
+}
+
+
+
+
