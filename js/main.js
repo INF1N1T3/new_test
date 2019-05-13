@@ -30,7 +30,11 @@ window.onload = function() {
 	 			for (let i = 0; i < answers[counter].length; i++) buttons[i].style.display = "block";
 	 			for (let i = answers[counter].length; i < buttons.length; i++) buttons[i].style.display = "none";
 	 		} else {
-	 			alert("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+	 			if (result < 0) { result = 0} else if (result >= results.length - 1) {result = results.length - 1} 
+	 			question.innerHTML = results[Math.round(result)];
+	 			for (var i = 0; i < buttons.length; i++) {
+	 				buttons[i].style.display = "none";
+	 			}
 	 		}
 	 	
 	}
@@ -45,35 +49,46 @@ window.onload = function() {
 				
 				let mass = [];
 				let mid_num = 0;
-				for (let i = 0; i < count_; i++) {
+				for (let j = 0; j < count_; j++) {
 					mid_num -= changes;
 				}
-				for (let i = 0; i < answers[counter].length; i++) {
-					let num = mid_num + (changes * i);
-					mass[i] = num;
+				for (let a = 0; a < answers[counter].length; a++) {
+					let num = mid_num + (changes * a);
+					mass[a] = num;
 				}
 				result += mass[i];
 				console.log(result);
 			} else {
 				let mass_ = [];
 				let mid_num = 0;
-				for (let i = 0; i < middle; i++) {
+				for (let l = 0; l < middle; l++) {
 					mid_num -= changes;
 				}
-				for (var i = 0; i < answers[counter].length; i++) {
-					if (i != count_) {
+				for (let q = 0; q < answers[counter].length; q++) {
+					if (q != middle) {
 						mid_num += changes;
-						mass_[i] = mid_num;
+						mass_[q] = mid_num;
 						
 					} 	else {
-					
 						mid_num += changes * 2;
-						mass_[i] = mid_num;
+						mass_[q] = mid_num;
 					}
 				}
+				/*for (let q = 0; q < answers[counter].length; q++) {
+					if (q != middle) {
+						mid_num += changes;
+						mass_[q] = mid_num;
+						
+					} 	else {
+						mid_num += changes * 2;
+						mass_[q] = mid_num;
+					}
+				}
+				*/
 				result += mass_[i];
-				console.log(result);
+			    console.log(result);
 			}
+
 			counter++;
 			initNext(counter, result);
 		});
