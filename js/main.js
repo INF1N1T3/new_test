@@ -7,7 +7,7 @@ window.onload = function() {
 	 ["У", "Ф", "Х", "Ц", "Ч"],
 	 ];
 	 const questions = [
-	 "А",
+	 "Вы будете сидет до поздна за компьютером?",
 	 "Б",
 	 "В",
 	 "Г",
@@ -32,6 +32,7 @@ window.onload = function() {
 	 		} else {
 	 			if (result < 0) { result = 0} else if (result >= results.length - 1) {result = results.length - 1} 
 	 			question.innerHTML = results[Math.round(result)];
+	 		
 	 			for (var i = 0; i < buttons.length; i++) {
 	 				buttons[i].style.display = "none";
 	 			}
