@@ -32,7 +32,7 @@ section {
 }
 .question {
 	letter-spacing: 1px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 50px;
 	position: relative;
 	display: flex;
@@ -43,7 +43,7 @@ section {
 	@media (max-width: 551px) {
 		.question {
 		letter-spacing: 1px;
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 30px;
 		position: relative;
 		display: flex;
@@ -78,7 +78,7 @@ section {
 	text-align: center;
 	margin: 5px;
 	letter-spacing: 1px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
 	color: white;
 	background: #181818;
@@ -88,7 +88,7 @@ section {
 @media (min-width: 750px) {
 		.question {
 		letter-spacing: 1px;
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 70px;
 		position: relative;
 		display: flex;
@@ -103,7 +103,7 @@ section {
 		justify-content: center;
 		margin: 5px;
 		letter-spacing: 1px;
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 30px;
 		color: white;
 		background: #181818;
@@ -134,7 +134,7 @@ section {
 	height: 35%;
 	background: purple;
 	font-size: 50px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .recom {
 	height: 65%;
