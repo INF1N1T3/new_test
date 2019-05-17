@@ -1,7 +1,7 @@
 body, html {
 	margin: 0;
 	padding: 0;
-	background: #7742f4;
+	background: blue;
 }
 section {
 	width: 70%;
@@ -80,10 +80,10 @@ section {
 	letter-spacing: 1px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
-	color: white;
-	background: #181818;
+	color: black;
+	background: white;
 	border-radius: 3px;
-	
+	box-shadow: 0 0 20px black;
 }
 @media (min-width: 750px) {
 		.question {
@@ -105,9 +105,10 @@ section {
 		letter-spacing: 1px;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 30px;
-		color: white;
-		background: #181818;
+		color: black;
+		background: white;
 		border-radius: 3px;
+		box-shadow: 0 0 20px black;
 		
 	}
 }
